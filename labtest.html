@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Pharmacy</title>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="header">
+            <p>Pharmacy</p>
+            <hr/>
+        </div>
+
+      <div class="w3-content w3-section" style="max-width:calc(100%); border-color: blue;">
+        <img class="mySlides" src="Images/Animation/ani1.jpg" style="width:calc(100%)">
+        <img class="mySlides" src="Images/Animation/ani2.png" style="width:calc(100%)">
+        <img class="mySlides" src="Images/Animation/ani3.jpg" style="width:calc(100%)">
+        <img class="mySlides" src="Images/Animation/ani4.jpg" style="width:calc(100%)">
+        <img class="mySlides" src="Images/Animation/ani5.jpg" style="width:calc(100%)">
+      </div>
+      
+      <ul>
+        
+        <li><a  href="index.html">Home</a></li>
+        <li class="dropdown"> 
+            <a href="javascript:void(0);" class="dropbtn">Our Medicine</a>
+            <div class="dropdown-content">
+                <a href="#">Fever</a>
+                <a href="#">Muscle Pains</a>
+                <a href="#">Cold and Cough</a>
+              </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Health Care</a>
+            <div class="dropdown-content">
+                <a href="#">Baby Care</a>
+                <a href="#">Home Care</a>
+                <a href="#">Pet Care</a>
+                <a href="#">Skin Care</a>
+                <a href="#">Personal Care</a>
+              </div>
+        
+        </li>
+        <li><a href="labtest.html">Lab Test</a></li>
+      </ul>
+    </div>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="form-horizontal" >
+                    <h3>1. Your Contact Details</h3>
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="name">Full Name</label>
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name"/>
+                        </div>  
+                                
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="patientid">Patient Id</label>
+                        <div class="col-md-6">
+                            <input type="text" name="patientid" class="form-control" id="patientid" placeholder="Enter your patient id if exists"/>
+                        </div>            
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="contact">Contact</label>
+                        <div class="col-md-6">
+                            <input type="text" name="contact" class="form-control" id="contact" placeholder="Enter your phone number"/>
+                        </div>            
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="email">Email</label>
+                        <div class="col-md-6">
+                            <input type="text" name="email" class="form-control" id="email" placeholder="Enter your email"/>
+                        </div>            
+                    </div>
+                    <br/>
+
+                    <h3> 2. Patient Address Details</h3>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3" for="house">House #</label>
+                        <div class="col-md-6">
+                            <input type="text" name="house" class="form-control" id="house" placeholder="Enter your house number"/>
+                        </div>            
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="street">Street</label>
+                        <div class="col-md-6">
+                            <input type="text" name="street" class="form-control" id="street" placeholder="Enter your street"/>
+                        </div>            
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="area">Area</label>
+                        <div class="col-md-6">
+                            <input type="text" name="area" class="form-control" id="area" placeholder="Enter your address details"/>
+                        </div>            
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-2" for="district">District</label>
+                        <div class="col-md-6">
+                            <select>
+                                <option value="" selected disabled hidden>Jharkhand</option>
+                                <option value="1">Ranchi</option>
+                                <option value="2">Dumka</option>
+                                <option value="3">jamshedpur</option>
+                                <option value="4">chandil</option>
+                                <option value="5">Galudih</option>
+                            </select>
+                        </div>            
+                    </div>
+                    <br/>
+                    <h3> Test Type</h3>
+
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <fieldset>
+                                <legend>Check  at-least one box</legend>
+                                <input type="radio" name="testtype" value="cbc">CBC<br>
+                                <input type="radio" name="testtype" value="urine">Complete Urine<br>
+                                <input type="radio" name="testtype" value="lprofile">Lipid Profile<br>
+                                <input type="radio" name="testtype" value="tsh">TSH<br>
+                                <input type="radio" name="testtype" value="glucose">Glucose Test<br>
+                            </fieldset>
+
+                        </div>   
+                    </div>         
+
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <fieldset>
+                                <legend>Do you want hard copy of the report?</legend>
+                                <input type="radio" name="hardcopy" value="yes">Yes<br>
+                                <input type="radio" name="hardcopy" value="no">No<br>
+                            </div>
+
+                        </div>            
+                    </div>
+                    
+                    <br/>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label for="birthdaytime">Select Your Comfortable Date and Time</label>
+                            <br/>
+                            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+                        </div>            
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+        
+    
+    <footer>
+        <div class="text-right">
+            <p>
+                &copy; Only for demonstration purpose. All rights Reserved
+            </p>
+        </div>
+        
+    </footer> 
+</div>
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+    }
+
+
+    </script>
+</body>
+</html>

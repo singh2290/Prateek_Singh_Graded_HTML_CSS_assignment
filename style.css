@@ -1,0 +1,173 @@
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+.header {
+    padding-right: 100px;
+    background-color: #333;
+  }
+  
+  .header p {
+    color: white;
+    font-size: 3rem;
+    margin: 0 0 16px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .header hr {
+    border: 0;
+    border-bottom: 1px solid var(--secondary-light);
+    height: 0;
+}
+
+footer {
+    margin-top: auto; 
+    height: 50px;
+    background-color: black;
+}
+
+footer div {
+    color: white;
+    font-size: 1rem;
+    margin: 0 0 16px;
+    text-align: right;
+}
+
+footer div p {
+    margin-right: 50px;
+}
+
+
+
+
+body {
+    background-color:white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.w3-content {
+    width:100%;
+
+    overflow: hidden;
+    background-color:#FFFFFF;
+    border:5px solid;
+    border-color: rgba(0, 255, 0, 0.5);  
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .btn:click {
+    background-color: rbg(250,234,230);
+    border-color: rgb(0, 255, 76);
+  }
+
+  
+  .column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  .row {margin: 0 -5px;}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .card {
+    margin: 5px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(16, 75, 175, 0.2);
+    padding: 16px;
+    width: 250px;
+    text-align: left;
+    background-color: #ccccf3;
+    font-weight: bold;
+  }
+
+  .card button {
+    border: solid;
+    border-color: #5457e9;
+    border-radius: 12px;
+    outline: 0;
+    padding: 12px;
+    background-color: #ccccf3;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+  }
+
+  .card button:hover {
+    opacity: 0.7;
+    background-color: #5457e9;
+    font-weight: bolder;
+  }
+
+
+
